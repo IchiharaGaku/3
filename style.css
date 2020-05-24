@@ -7,111 +7,182 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height:1;
+  line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
 }
- * {
-   padding: 0;
-   margin: 0;
- }
+* {
+  padding: 0;
+  margin: 0;
+}
 
- .section-title {
-   font-size: 30px;
-   font-weight: bold;
-   margin: 30px 0;
-   text-align: center;
- }
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
 
 img {
   display: block;
@@ -174,7 +245,7 @@ header {
 }
 
 #eyecatch {
-  background-image: url(../image/オマージュ2/OIP.jpg);
+  background-image: url(./image/オマージュ2/OIP.jpg);
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -228,7 +299,7 @@ header {
 }
 .photo2 {
   position: relative;
-  top:40px;
+  top: 40px;
   left: 60px;
   width: 25%;
   height: 25%;
@@ -247,14 +318,15 @@ header {
 .number {
   font-size: 250px;
   color: #e5e2c6;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
 .first {
   position: relative;
   right: 50px;
-  opacity: .7;
+  opacity: 0.7;
 }
-.style-top, .style-bottom {
+.style-top,
+.style-bottom {
   position: relative;
   left: 40%;
   color: #332930;
@@ -278,7 +350,7 @@ header {
   cursor: pointer;
 }
 .read:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 .top {
   position: relative;
@@ -322,7 +394,7 @@ header {
   width: 800px;
   height: 700px;
   background-color: #e2e5c6;
-  opacity: .8;
+  opacity: 0.8;
   position: relative;
 }
 .produ {
@@ -337,9 +409,9 @@ header {
   top: 20px;
   z-index: -1;
   color: #fff;
-
 }
-.protop, .middle {
+.protop,
+.middle {
   position: relative;
   top: 300px;
   left: 10%;
@@ -427,7 +499,8 @@ header {
   font-size: 30px;
   color: #332920;
 }
-.locate, .tel {
+.locate,
+.tel {
   padding-top: 30px;
   font-size: 20px;
   color: #332920;
@@ -439,7 +512,8 @@ header {
   margin-left: 150px;
   position: absolute;
 }
-.room1, .room2 {
+.room1,
+.room2 {
   width: 80%;
   height: 100%;
 }
@@ -459,10 +533,9 @@ header {
   position: relative;
   top: 250px;
 }
-.sub>.line {
+.sub > .line {
   height: 300px;
 }
-
 
 .model {
   position: relative;
@@ -472,7 +545,7 @@ header {
   top: -400px;
 }
 .model::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -480,7 +553,7 @@ header {
   height: 1100px;
   margin: 3% -10% 0;
   background-color: #e2e5c6;
-  opacity: .8;
+  opacity: 0.8;
   transform-origin: left center;
   transform: rotate(5deg);
   z-index: -2;
@@ -494,14 +567,14 @@ header {
 .fontmodel {
   font-size: 150px;
   color: #dedede;
-  font-family: 'Ubuntu Mono';
+  font-family: "Ubuntu Mono";
   font-weight: bold 700 italic;
   position: relative;
   top: 80px;
   left: 60px;
 }
 .model::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -509,19 +582,23 @@ header {
   height: 80%;
   margin: 3% -10% 0;
   background-color: #332920;
-  opacity: .6;
+  opacity: 0.6;
   transform-origin: right center;
   transform: rotate(-5deg);
   z-index: -1;
 }
-.model1, .model2, .model3 {
+.model1,
+.model2,
+.model3 {
   position: relative;
   overflow: hidden;
   top: -300px;
   box-shadow: none;
 }
-.model1, .model2, .model3 {
-  content: '';
+.model1,
+.model2,
+.model3 {
+  content: "";
   width: 120%;
   height: 80px;
   margin: 3% -10% 0;
@@ -562,8 +639,8 @@ header {
   bottom: 410px;
   background-color: #e2e5c6;
   height: 700px;
-  opacity: .8;
-  z-index: -2; 
+  opacity: 0.8;
+  z-index: -2;
   margin: 0 auto;
 }
 .each {
@@ -572,7 +649,10 @@ header {
   margin: 0 auto;
   padding: 100px 30%;
 }
-.menu, .coupon, .staff, .sty {
+.menu,
+.coupon,
+.staff,
+.sty {
   width: 50%;
   margin: 0 10px;
   width: 300px;
@@ -585,7 +665,7 @@ header {
   align-items: center;
   font-size: 35px;
   cursor: pointer;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .coupon {
@@ -622,7 +702,9 @@ header {
 .article {
   margin: 0 10px;
 }
-.cake, .woman, .shop {
+.cake,
+.woman,
+.shop {
   width: 300px;
   height: 200px;
 }
