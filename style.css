@@ -223,6 +223,7 @@ header.transform {
 }
 
 .flex {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -568,15 +569,29 @@ header.transform {
 }
 .room1 {
   position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 1s;
+}
+.room1.room1in {
   top: -30%;
   right: -40%;
-  z-index: 1;
+  opacity: 1;
 }
 .room2 {
   position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 1s;
+  opacity: 0;
+}
+.room2.room2in {
   top: -40%;
   left: -20%;
-  z-index: 2;
+  opacity: 1;
 }
 .sub {
   position: relative;

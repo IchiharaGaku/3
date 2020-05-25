@@ -39,7 +39,7 @@
     color: #332930;
     opacity: 0.8;
     box-shadow: -80px 0 rgba(39, 37, 24, 0.6) inset;
-    z-index: 1000;
+    z-index: 100;
   }
 
   .menu-content li a {
@@ -85,10 +85,34 @@
   #hamburger span:nth-of-type(3) {
     top: 30px;
   }
+  header {
+    position: static;
+  }
   .header-nav {
     display: none;
   }
-
+  .a {
+    margin-left: 0;
+  }
+  #top-btn {
+    background-color: #332930;
+    color: #e5e2c6;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    font-size: 30px;
+    padding: auto 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+  }
+  #eyecatch {
+    top: 0px;
+  }
   .hairstyle {
     margin: 0 auto;
     position: static;
@@ -101,11 +125,16 @@
     font-size: 50px;
     padding: 10% 5%;
   }
+  .hair.fadein {
+    opacity: 1;
+    left: 0;
+  }
   .photo1,
   .photo2 {
     top: 0px;
     left: 5%;
   }
+
   .column,
   line,
   .salon {
@@ -168,6 +197,7 @@
     top: -290px;
     height: 380px;
   }
+
   .model2 {
     top: 40%;
   }
@@ -206,8 +236,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+  }
   .header-logo {
     margin-left: 10px;
+    margin-right: 0px;
   }
   #eyecatch {
     height: 400px;
@@ -221,8 +255,12 @@
   }
   .style {
     font-size: 70px;
-    left: -5%;
+    left: -100%;
     bottom: 650px;
+    transition: all 1s;
+  }
+  .style.stylein {
+    left: -2%;
   }
   .first {
     font-size: 150px;
@@ -234,6 +272,11 @@
   .style-top,
   .style-bottom {
     bottom: 650px;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .fadeon {
+    opacity: 1;
   }
   .top {
     left: 30%;
@@ -261,6 +304,11 @@
     left: 0%;
     top: 200px;
     font-size: 18px;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .fadeon {
+    opacity: 1;
   }
   .middle {
     margin-left: 20px;
