@@ -3,6 +3,60 @@
     margin: 0 auto;
     width: 100%;
   }
+  #hamburger.active span:nth-of-type(1) {
+    top: 20px;
+    transform: rotate(45deg);
+  }
+  #hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  #hamburger.active span:nth-of-type(3) {
+    top: 20px;
+    transform: rotate(-45deg);
+  }
+  #hamuburger,
+  .menu-content {
+    display: block;
+  }
+  .menu-content,
+  .menu-title {
+    margin: 40px, 20px;
+    font-size: 2.2rem;
+    color: #332930;
+    text-align: left;
+    font-weight: bold;
+  }
+  .menu-content {
+    margin-top: 150px;
+    width: calc(100% - 80px);
+    height: 100%;
+    text-align: center;
+    transition: 1.2s;
+    position: fixed;
+    top: 0;
+    right: calc(-100% - 80px);
+    background-color: #fff;
+    color: #332930;
+    opacity: 0.8;
+    box-shadow: -80px 0 rgba(39, 37, 24, 0.6) inset;
+    z-index: 1000;
+  }
+
+  .menu-content li a {
+    color: #332930;
+    margin: 15px;
+    padding: 5px;
+    border-bottom: 0.5px solid #e5e2c6;
+    text-decoration: none;
+    display: block;
+  }
+  .menu-content li {
+    width: 100%;
+    text-align: left;
+  }
+  .menu-content.open {
+    right: 0;
+  }
   #hamburger {
     width: 40px;
     height: 40px;
@@ -11,7 +65,7 @@
     right: 20px;
     z-index: 100;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
   }
   #hamburger span {
     width: 35px;
@@ -20,16 +74,16 @@
     left: 2px;
     display: block;
     background-color: #dedede;
-    transition: .8s;
+    transition: 0.8s;
   }
   #hamburger span:nth-of-type(1) {
-    top:10px;
+    top: 10px;
   }
   #hamburger span:nth-of-type(2) {
-    top:20px;
+    top: 20px;
   }
   #hamburger span:nth-of-type(3) {
-    top:30px;
+    top: 30px;
   }
   .header-nav {
     display: none;
@@ -45,19 +99,23 @@
   }
   .hair {
     font-size: 50px;
-    padding:10% 5%;
+    padding: 10% 5%;
   }
-  .photo1, .photo2 {
+  .photo1,
+  .photo2 {
     top: 0px;
     left: 5%;
   }
-  .column, line, .salon {
+  .column,
+  line,
+  .salon {
     display: none;
   }
-  .style-top, .style-bottom {
+  .style-top,
+  .style-bottom {
     overflow-wrap: break-word;
     width: 50%;
-    bottom: 600px
+    bottom: 600px;
   }
   .style-bottom {
     padding-top: 40px;
@@ -124,15 +182,20 @@
   .each {
     padding: 100px 10%;
   }
-  .menu, .coupon, .staff, .sty {
+  .menu,
+  .coupon,
+  .staff,
+  .sty {
     text-align: center;
   }
 
   .lastsection {
     margin: 0;
     height: 100px;
-    }
-  .cake, .woman, .shop {
+  }
+  .cake,
+  .woman,
+  .shop {
     width: 220px;
     height: 150px;
   }
@@ -164,10 +227,12 @@
   .first {
     font-size: 150px;
   }
-  .photo1, .photo2 {
+  .photo1,
+  .photo2 {
     top: -200px;
   }
-  .style-top, .style-bottom {
+  .style-top,
+  .style-bottom {
     bottom: 650px;
   }
   .top {
@@ -241,7 +306,7 @@
     height: 200px;
   }
   .fontmodel {
-    font-size:40px;
+    font-size: 40px;
     top: -120px;
   }
   .model1 {
@@ -273,7 +338,10 @@
   .each {
     display: block;
   }
-  .menu, .coupon, .staff, .sty {
+  .menu,
+  .coupon,
+  .staff,
+  .sty {
     position: static;
     margin-left: 0px;
     margin-bottom: 10px;

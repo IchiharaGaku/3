@@ -213,14 +213,22 @@ img {
 header {
   margin: 0 auto;
   height: 120px;
-  background-color: #000;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9);
 }
+header.transform {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 95px;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
 }
 .header-logo {
   margin-left: 40px;
+  margin-right: 790px;
   padding: 20px 0;
   color: #dedede;
   font-size: 70px;
@@ -229,7 +237,7 @@ header {
   display: flex;
 }
 .header-nav li {
-  margin: 40px 0px;
+  margin: 30px 0px;
   font-size: 25px;
   border-right: 2px solid #dedede;
   padding: 20px;
@@ -244,16 +252,38 @@ header {
   color: #dedede;
 }
 
+#top-btn {
+  background-color: #332930;
+  color: #e5e2c6;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  position: fixed;
+  font-size: 30px;
+  padding: auto 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
 #eyecatch {
   background-image: url(./image/オマージュ2/OIP.jpg);
   background-size: cover;
   background-position: center;
   height: 600px;
+  position: relative;
+  top: 100px;
+}
+.menu-content {
+  display: none;
 }
 
 .hairstyle {
   margin: 0 auto;
   position: relative;
+  top: 50px;
   height: 700px;
 }
 .square1 {
@@ -261,7 +291,7 @@ header {
   height: 80%;
   background-color: #e5e2c6;
   position: absolute;
-  top: 30px;
+  top: 100px;
   right: 0;
   z-index: -2;
 }
@@ -280,6 +310,14 @@ header {
   font-size: 70px;
   font-family: italic;
   color: #332930;
+  position: relative;
+  left: -55%;
+  opacity: 0.5;
+  transition: all 1s;
+}
+.hair.fadein {
+  opacity: 1;
+  left: 0;
 }
 
 .main-wrap {
@@ -289,23 +327,20 @@ header {
 .photo01 {
   position: relative;
 }
-.photo1 {
+.sample {
   position: relative;
-  top: 40px;
+  top: -10px;
   left: 60px;
   width: 25%;
   height: 25%;
   z-index: -1;
+  opacity: 0;
+  transition: all 1.2s;
 }
-.photo2 {
-  position: relative;
+.bottomin {
   top: 40px;
-  left: 60px;
-  width: 25%;
-  height: 25%;
-  z-index: -1;
+  opacity: 1;
 }
-
 .wrap {
   font-size: 100px;
   color: #332930;
@@ -313,8 +348,14 @@ header {
 .style {
   position: relative;
   bottom: 800px;
+  left: 100%;
+  transition: all 1s;
+}
+.style.rightin {
+  opacity: 1;
   left: 25%;
 }
+
 .number {
   font-size: 250px;
   color: #e5e2c6;
@@ -400,8 +441,12 @@ header {
 .produ {
   font-size: 80px;
   position: absolute;
-  left: 5%;
+  left: -50%;
   padding-top: 100px;
+  transition: all 1s;
+}
+.produ.produin {
+  left: 5%;
 }
 .second {
   position: absolute;
@@ -484,6 +529,10 @@ header {
 }
 .sal {
   position: relative;
+  left: 100%;
+  transition: all 1s;
+}
+.sal.salin {
   left: 40%;
 }
 .third {
@@ -550,7 +599,7 @@ header {
   top: 0;
   left: 0;
   width: 120%;
-  height: 1100px;
+  height: 1200px;
   margin: 3% -10% 0;
   background-color: #e2e5c6;
   opacity: 0.8;
@@ -611,7 +660,13 @@ header {
   height: 60%;
   position: relative;
   top: -320px;
+  left: 100%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.model1.model1in {
   left: 53%;
+  opacity: 1;
 }
 
 .model2 {
@@ -619,14 +674,26 @@ header {
   height: 45%;
   position: absolute;
   top: 41%;
+  left: -100%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.model2.model2in {
   left: 2%;
+  opacity: 1;
 }
 .model3 {
   width: 50%;
   height: 35%;
   position: absolute;
-  top: 45%;
+  top: 46%;
+  left: 100%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.model3.model3in {
   left: 61%;
+  opacity: 1;
 }
 .foot {
   position: relative;
@@ -698,6 +765,11 @@ header {
   display: flex;
   justify-content: space-around;
   margin: 0 10px;
+  opacity: 0;
+  transition: all 1s;
+}
+.articles.artin {
+  opacity: 1;
 }
 .article {
   margin: 0 10px;
