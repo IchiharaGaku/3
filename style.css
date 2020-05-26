@@ -214,7 +214,7 @@ header {
   margin: 0 auto;
   height: 120px;
   position: fixed;
-  z-index: 999;
+  z-index: 200;
   background-color: rgba(0, 0, 0, 0.9);
 }
 header.transform {
@@ -255,7 +255,7 @@ header.transform {
 
 #top-btn {
   background-color: #332930;
-  color: #e5e2c6;
+  color: #b576ad;
   text-align: center;
   line-height: 40px;
   cursor: pointer;
@@ -794,6 +794,46 @@ header.transform {
 .shop {
   width: 300px;
   height: 200px;
+}
+.cake:hover,
+.woman:hover,
+.shop:hover {
+  opacity: 0.8;
+}
+.js-modal-open {
+  text-decoration: none;
+  color: #332920;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.bigimg {
+  position: absolute;
+  width: 80%;
+  max-width: 800px;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.closebtn {
+  color: #fff;
+  font-size: 40px;
+  position: fixed;
+  right: 20px;
+  top: 0;
+  z-index: 999;
+}
+.closebtn a {
+  color: #fff;
+  text-decoration: none;
 }
 .arttext {
   display: block;

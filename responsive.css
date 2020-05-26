@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   * {
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
   }
   #hamburger.active span:nth-of-type(1) {
@@ -60,7 +60,7 @@
   #hamburger {
     width: 40px;
     height: 40px;
-    position: absolute;
+    position: fixed;
     top: 15px;
     right: 20px;
     z-index: 100;
@@ -69,11 +69,12 @@
   }
   #hamburger span {
     width: 35px;
-    height: 2px;
+    height: 4px;
+    border-radius: 5px;
     position: absolute;
     left: 2px;
     display: block;
-    background-color: #dedede;
+    background-color: #b576ad;
     transition: 0.8s;
   }
   #hamburger span:nth-of-type(1) {
@@ -94,7 +95,7 @@
   .a {
     margin-left: 0;
   }
-  #top-btn {
+  /* #top-btn {
     background-color: #332930;
     color: #e5e2c6;
     text-align: center;
@@ -109,7 +110,7 @@
     bottom: 20px;
     right: 20px;
     z-index: 100;
-  }
+  } */
   #eyecatch {
     top: 0px;
   }

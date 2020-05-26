@@ -161,6 +161,25 @@ $(function () {
     });
   });
 
+  $(".js-modal-open").click(function () {
+    var imgSrc = $(this).children().attr("src");
+    var pSrc = $(this).children().attr("p");
+    $(".bigimg").children().attr("src", imgSrc);
+    $(".bigimg").children().attr("p", pSrc);
+    $(".modal").fadeIn();
+    $("html,body").css("overflow-y", "hidden");
+    $("header").css("display", "none");
+    $(pSrc).css("color", "#dedede");
+    return false;
+  });
+
+  $(".closebtn").click(function () {
+    $(".modal").fadeOut();
+    $("html, body").css("overflow-y", "visible");
+    $("header").css("display", "block");
+    return false;
+  });
+
   $("#hamburger").click(function () {
     $(this).toggleClass("active");
     $(".menu-content").toggleClass("open");
@@ -168,29 +187,18 @@ $(function () {
 
   // iPad用jQuery  ----------------------------------------------
 
-  if ($(window).innerWidth() >= 481 && $(window).innerWidth() < 769) {
-    $(window).scroll(function () {
-      $(".hair").show(function () {
-        var txtPos = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        if (scroll > 1) {
-          $(this).addClass("fadein");
-        }
-      });
-      $(".style").show(function () {
-        var txtPos = $(this).offset().top;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-
-        if (scroll > txtPos - windowHeight) {
-          $(this).addClass("rightin");
-        }
-      });
-
-      // $("#top-btn").offset({ right: 1000 });
+  if ($(window).innerWidth() < 769) {
+    $(".hair").scroll(function () {
+      $(this).addClass("fadein");
     });
+
+    $(".style").show(function () {
+      if (scroll > 0) {
+        $(this).addClass("rightin");
+      }
+    });
+
+    // $("#top-btn").offset({ right: 1000 });
   }
 
   //  スマホ用ｊQuery ---------------------------------------
